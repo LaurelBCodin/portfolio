@@ -1,0 +1,31 @@
+/***************************************************************************
+                            TOP NAV SECTION
+****************************************************************************/
+
+.top-bar {
+  background: transparent;
+  padding: 0 0.9375rem;
+  max-width: $global-width;
+  margin: 0 auto;
+
+  ul {
+    background-color: transparent;
+      a {
+    color: $secondary-color;
+  }
+  }
+
+
+
+  .logo-name {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: $brand-color;
+    padding: 50px 0;
+  }
+
+  @include breakpoint(small only) {
+    padding: 0 0.625rem;
+  }
+}
