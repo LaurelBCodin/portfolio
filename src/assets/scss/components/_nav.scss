@@ -11,13 +11,17 @@
   ul {
     background-color: transparent;
       a {
+        font-size: rem-calc(22);
         color: $secondary-color;
       }
   }
 
+  @include breakpoint(small only) {
+    padding: 0 0.625rem;
+  }
+}
 
-
-  .logo-name {
+.logo-name {
     font-family: 'Lora', serif;
     font-weight: bold;
     font-size: 2em;
@@ -25,7 +29,10 @@
     padding: 50px 0;
   }
 
-  @include breakpoint(small only) {
-    padding: 0 0.625rem;
+.title-bar {
+  background: transparent;
+
+  .menu-icon {
+   @include hamburger($medium-gray, $medium-gray, 20px, 16px, 2px, 3);
   }
 }
