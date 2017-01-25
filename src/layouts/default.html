@@ -12,20 +12,19 @@
 </head>
 
 <body>
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-            <button class="close-button" aria-label="Close menu" type="button" data-close>
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <ul class="vertical menu">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="off-canvas-content" data-off-canvas-content>
-            {{> body}} {{> footer}}
-        </div>
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <ul class="vertical menu">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">WORK</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+        {{> body}}
+        {{> footer}}
     </div>
     <script src="{{root}}assets/js/app.js"></script>
 </body>
