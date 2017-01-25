@@ -3,84 +3,76 @@
 /***************************************************************************
                             WRAPPER SECTION
 ****************************************************************************/
+
 .wrapper {
-  background: url('../img/background-desk.png') center center no-repeat;
-  background-size: cover;
-  height: 800px;
-
-  h2 {
-    font-size: rem-calc(72);
-    line-height: rem-calc(80);
-
-    span {
-      color: $medium-gray;
+    background: url('../img/background-desk.png') center center no-repeat;
+    background-size: cover;
+    height: 800px;
+    h2 {
+        font-size: rem-calc(72);
+        line-height: rem-calc(80);
+        span {
+            color: $medium-gray;
+        }
+        @include breakpoint(small only) {
+            font-size: rem-calc(36);
+            line-height: rem-calc(40);
+        }
     }
-
     @include breakpoint(small only) {
-      font-size: rem-calc(36);
-      line-height: rem-calc(40);
+        background-position: right;
+        height: 500px;
     }
-  }
-
-  @include breakpoint(small only) {
-    background-position: right;
-    height: 500px;
-
-  }
-
-  @include breakpoint(medium only) {
-
-  }
+    @include breakpoint(medium only) {}
 }
+
 
 /***************************************************************************
                             ABOUT SECTION
 ****************************************************************************/
+
 .about {
-  padding: rem-calc(60) 0;
-
-  p {
-    color: $medium-gray;
-    font-size: rem-calc(21);
-    line-height: rem-calc(30);
-  }
-
-    @include breakpoint(small only) {
-
-    h2 {
-      font-size: rem-calc(36);
-      line-height: rem-calc(40);
+    padding: rem-calc(60) 0;
+    p {
+        color: $medium-gray;
+        font-size: rem-calc(21);
+        line-height: rem-calc(30);
     }
-  }
+    @include breakpoint(small only) {
+        h2 {
+            font-size: rem-calc(36);
+            line-height: rem-calc(40);
+        }
+    }
 }
+
+
 /***************************************************************************
                             WORK SECTION
 ****************************************************************************/
 
 .work {
-  padding: rem-calc(60) 0;
-  background: $primary-color;
-
-   h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    font-size: rem-calc(24);
-  }
-
-  p{
-    font-family: 'Lora', serif;
-    font-size: rem-calc(18);
-    line-height: rem-calc(30);
-  }
-
-  img {
-    padding-bottom: 30px;
-  }
+    padding: rem-calc(60) 0;
+    background: $primary-color;
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        font-size: rem-calc(24);
+    }
+    p {
+        font-size: rem-calc(18);
+        line-height: rem-calc(30);
+    }
+    img {
+        padding: 30px 0;
+    }
 }
 
 .featured-skills {
-  text-align: center;
+    text-align: center;
 }
+
+
 /***************************************************************************
                             CONTACT SECTION
 ****************************************************************************/
@@ -88,4 +80,53 @@
 .contact {
   padding: rem-calc(60) 0;
   background: $light-gray;
+
+  img.contact-image {
+    border: 12px solid #ffffff;
+  }
+
+  .contact-info {
+    margin-left: rem-calc(60);
+
+    h2 {
+      font-size: rem-calc(36);
+      font-weight: lighter;
+    }
+
+    p {
+      font-size: rem-calc(32);
+
+      &.socialmedia-header {
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 0;
+      }
+    }
+
+    .email-address {
+      font-size: rem-calc(28);
+      font-weight: 900;
+      color: #c49075;
+    }
+
+    .envelope {
+      padding-right: 10px;
+    }
+
+    .contact-info-subheader {
+      margin: 0;
+    }
+
+    .socialmedia-icon {
+      padding: 0 40px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+    }
+
+    @include breakpoint(small only) {
+      margin-left: rem-calc(30);
+    }
+  }
 }
